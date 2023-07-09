@@ -21,8 +21,8 @@
                     <form id="login-form" class="form" action="${pageContext.request.contextPath}/login" method="post">
                         <h3 class="text-center text-info">Faça seu Login</h3>
                         <div class="form-group">
-                            <label for="txtusuario" class="text-info">Usuário:</label><br>
-                            <input type="text" name="txtusuario" id="txtusuario" class="form-control" required>
+                            <label for="txtemail" class="text-info">Usuário:</label><br>
+                            <input type="text" name="txtemail" id="txtemail" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="txtsenha" class="text-info">Senha:</label><br>

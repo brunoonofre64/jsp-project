@@ -12,22 +12,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-
-<div class="list-group">
-    <p class="text-center">Lista de Usuários</p>
-    <jsp:useBean id="users" scope="request" type="java.util.List"/>
-    <c:forEach var="user" items="${users}">
-        <a href="#" class="list-group-item">${user.email}</a>
-    </c:forEach>
-</div>
-
-<%--<div class="list-group">--%>
-<%--    <p style="color: black; text-align: center; margin: 0;">Lista de Usuários</p>--%>
-<%--    <jsp:useBean id="users" scope="request" type="java.util.List"/>--%>
-<%--    <c:forEach var="user" items="${users}">--%>
-<%--        <a href="#" class="list-group-item">${user.email}</a>--%>
-<%--    </c:forEach>--%>
-<%--</div>--%>
-
+<h1 style="color: rgb(255, 255, 255); ">Bem-vindo, <c:out value="${sessionScope.nome}!"/></h1>
 </body>
 </html>
