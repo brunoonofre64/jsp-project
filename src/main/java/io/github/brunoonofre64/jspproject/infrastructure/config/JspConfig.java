@@ -14,14 +14,16 @@ public class JspConfig implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/login").setViewName("login");
         registry.addViewController("/user").setViewName("usuario");
-
-        // Mapear mais telas JSP aqui
+        registry.addViewController("/logout").setViewName("logout");
+        registry.addViewController("/crud").setViewName("crud");
     }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/css/**")
                 .addResourceLocations("/WEB-INF/css/");
+        registry.addResourceHandler("/fonts/**")
+                .addResourceLocations("/WEB-INF/fonts/");
     }
 
     @Bean

@@ -13,5 +13,8 @@
 </head>
 <body>
 <h1 style="color: rgb(255, 255, 255); ">Bem-vindo, <c:out value="${sessionScope.nome}!"/></h1>
+
+<a style="color: rgb(255, 255, 255); " href="${pageContext.request.contextPath}/logout"> Sair</a>
+
 </body>
 </html>
